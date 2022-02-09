@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Menu que contiene nuestras paginas-->
+
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Grupo que contiene elementos cliqueables -->
+
+    <group android:checkableBehavior="single">
+
+        <!-- Elemento noticias con su icono e ID -->
+
+        <item
+            android:id="@+id/activity_main_drawer_news"
+            android:icon="@drawable/ic_dashboard_white_24dp"
+            android:title="Noticias" />
+
+    </group>
+
+    <!-- Elemento configuracion que contiene un menu -->
+
+    <item android:title="Configuration">
+
+        <!-- Menu que contendra un grupo -->
+
+        <menu>
+
+            <!-- Este grupo muestras items cliqueables -->
+
+            <group android:checkableBehavior="single">
+
+                <!-- Este elemento sera el de perfil -->
+
+                <item
+
+                    android:id="@+id/activity_main_drawer_profile"
+                    android:icon="@drawable/ic_account_box_white_24dp"
+                    android:title="Perfil" />
+
+                <!-- Este elemento sera el de parametros -->
+
+                <item
+
+                    android:id="@+id/activity_main_drawer_settings"
+                    android:icon="@drawable/ic_settings_applications_white_24dp"
+                    android:title="Parametros" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>
